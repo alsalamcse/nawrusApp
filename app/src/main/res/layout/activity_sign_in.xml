@@ -21,8 +21,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="email"
         android:inputType="textPersonName"
-        android:text="email"
         tools:layout_editor_absoluteX="110dp"
         tools:layout_editor_absoluteY="190dp" />
 
@@ -31,8 +31,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="password"
         android:inputType="textPersonName"
-        android:text="password"
         tools:layout_editor_absoluteX="110dp"
         tools:layout_editor_absoluteY="272dp" />
 

@@ -10,6 +10,8 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class SignUp extends AppCompatActivity {
     private EditText edtfname;
@@ -66,8 +68,12 @@ public class SignUp extends AppCompatActivity {
                 createAcount(email,passw1,fname,lname,phone);//createAcount(email,passw1)
             }
         }
-        private void createAcount(String email, String passw1, String fname, String lname, String phone) {
+
+
+    }
+    private void createAcount(String email, String passw1, String fname, String lname, String phone) {
         FirebaseAuth auth = FirebaseAuth.getInstance();
+
         auth.createUserWithEmailAndPassword(email, passw1).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
@@ -83,8 +89,6 @@ public class SignUp extends AppCompatActivity {
             }
 
         });
-    }
-
     }
 
 

@@ -9,9 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AddName"></activity>
-        <activity android:name=".manajorChart" />
-        <activity android:name=".manajor" />
+        <activity android:name=".AddClient"></activity>
+        <activity android:name=".AddManager" />
+        <activity android:name=".managerChart" />
+        <activity android:name=".manager" />
         <activity android:name=".SignUp" />
         <activity android:name=".SignIn" />
         <activity android:name=".MainActivity">

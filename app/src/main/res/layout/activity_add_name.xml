@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddName">
+    tools:context=".AddManager">
 
     <EditText
         android:id="@+id/edtName4"
@@ -12,8 +12,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="85dp"
         android:ems="10"
+        android:hint="Name"
         android:inputType="textPersonName"
-        android:text="Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -22,29 +22,57 @@
         android:id="@+id/edtSubject"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="29dp"
         android:ems="10"
+        android:hint="Subject"
         android:inputType="textPersonName"
-        android:text="Subject"
-        tools:layout_editor_absoluteX="105dp"
-        tools:layout_editor_absoluteY="173dp" />
+        app:layout_constraintBottom_toTopOf="@+id/edtPhone4"
+        app:layout_constraintStart_toStartOf="@+id/edtPhone4" />
 
     <EditText
         android:id="@+id/edtPhone4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="20dp"
         android:ems="10"
+        android:hint="Phone"
         android:inputType="textPersonName"
-        android:text="Phone"
-        tools:layout_editor_absoluteX="101dp"
-        tools:layout_editor_absoluteY="247dp" />
+        app:layout_constraintBottom_toTopOf="@+id/edtDate"
+        app:layout_constraintEnd_toEndOf="@+id/edtDate" />
 
     <Button
         android:id="@+id/btnSave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
         android:text="Save"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="390dp" />
+        app:layout_constraintTop_toBottomOf="@+id/edtDate" />
+
+    <EditText
+        android:id="@+id/edtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="312dp"
+        android:ems="10"
+        android:hint="Date"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtHour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="hour"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="102dp"
+        tools:layout_editor_absoluteY="376dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
