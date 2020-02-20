@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "260686142841",
+    "firebase_url": "https://nawrusapp.firebaseio.com",
+    "project_id": "nawrusapp",
+    "storage_bucket": "nawrusapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:260686142841:android:0435782a4d821f4f6ea3a8",
+        "android_client_info": {
+          "package_name": "nawrus.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "260686142841-b97oe428r1epoolg34seskonogbdha2n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "nawrus.myapplication",
+            "certificate_hash": "8d4e87598d212bdb282d05faa7766dc9c486dbdf"
+          }
+        },
+        {
+          "client_id": "260686142841-7atrfsdh95bc3ds2uqevqt14unhhpumt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDp3LmGxuRnloJSgGEzqjNLKg_Q-5xY8N8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "260686142841-7atrfsdh95bc3ds2uqevqt14unhhpumt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

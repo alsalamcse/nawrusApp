@@ -2,7 +2,9 @@ package nawrus.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -25,5 +27,18 @@ public class SignIn extends AppCompatActivity {
         edtPassword=(EditText)findViewById(R.id.edtPassword);
         btnSignIn=(Button)findViewById(R.id.btnSignIn);
         btnSignUp=(Button)findViewById(R.id.btnSignUp);
+
+        btnSignUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(getApplication(),SignUp.class);
+                startActivity(i);
+            }
+        });
     }
+
+
+
+
+
 }
