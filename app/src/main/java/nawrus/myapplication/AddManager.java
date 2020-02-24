@@ -29,7 +29,7 @@ public class AddManager extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_name);
+        setContentView(R.layout.activity_add_manager);
         edtName4=(EditText)findViewById(R.id.edtName4);
         edtSubject=(EditText)findViewById(R.id.edtSubject);
         edtPhone4=(EditText)findViewById(R.id.edtPhone4);
