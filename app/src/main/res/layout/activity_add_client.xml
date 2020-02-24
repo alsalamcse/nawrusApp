@@ -44,17 +44,21 @@
         android:id="@+id/edtPass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="2dp"
         android:ems="10"
         android:hint="password"
         android:inputType="textPassword"
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="331dp" />
+        app:layout_constraintEnd_toEndOf="@+id/edtEmail2"
+        app:layout_constraintTop_toBottomOf="@+id/edtEmail2" />
 
     <Button
         android:id="@+id/btnSaveClient"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="146dp"
+        android:layout_marginBottom="190dp"
         android:text="save"
-        tools:layout_editor_absoluteX="146dp"
-        tools:layout_editor_absoluteY="493dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -61,14 +61,13 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/edtEmail"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.457" />
+        app:layout_constraintVertical_bias="0.548" />
 
     <EditText
         android:id="@+id/edtRewritePassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="23dp"
-        android:layout_marginEnd="3dp"
+        android:layout_marginTop="60dp"
         android:ems="10"
         android:hint="rewrite password"
         android:inputType="textPersonName"
@@ -79,9 +78,10 @@
         android:id="@+id/btnSignUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="43dp"
+        android:layout_marginTop="100dp"
         android:text="save"
         app:layout_constraintEnd_toEndOf="@+id/edtRewritePassword"
+        app:layout_constraintHorizontal_bias="0.536"
         app:layout_constraintStart_toStartOf="@+id/edtRewritePassword"
         app:layout_constraintTop_toBottomOf="@+id/edtRewritePassword" />
 </androidx.constraintlayout.widget.ConstraintLayout>
