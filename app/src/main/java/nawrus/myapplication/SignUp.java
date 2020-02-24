@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -33,6 +34,13 @@ public class SignUp extends AppCompatActivity {
         edtPassword=(EditText)findViewById(R.id.edtPassword);
         edtRewritePassword=(EditText)findViewById(R.id.edtRewritePassword);
         btnSignUp=(Button)findViewById(R.id.btnSignUp);
+
+        btnSignUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dataHandler();
+            }
+        });
 
     }
     private void dataHandler()
