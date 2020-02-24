@@ -55,26 +55,27 @@ public class SignUp extends AppCompatActivity {
         if(email.length()<4 || email.indexOf('@')<0 || email.indexOf('.')<0) {
             edtEmail.setError("wrong Email");
             isOk = false;
-            {
+
                 edtEmail.setError("wrong Email");
                 isOk=false;
 
-            }
-            if((passw1.length()<8)||passw1.equals(passw2)==false)
-            {
-                edtRewritePassword.setError("Have to be at least 8 char and the same password");
-                edtPassword.setError("Have to be at least 8 char and the same password");
-                isOk=false;
-            }
-            if(fname.length()==0)
-            {
-                edtfname.setError("enter name");
-                isOk=false;
-            }
-            if(isOk)
-            {
-                createAcount(email,passw1,fname,lname,phone);//createAcount(email,passw1)
-            }
+
+
+        }
+        if((passw1.length()<8)||passw1.equals(passw2)==false)
+        {
+            edtRewritePassword.setError("Have to be at least 8 char and the same password");
+            edtPassword.setError("Have to be at least 8 char and the same password");
+            isOk=false;
+        }
+        if(fname.length()==0)
+        {
+            edtfname.setError("enter name");
+            isOk=false;
+        }
+        if(isOk)
+        {
+            createAcount(email,passw1,fname,lname,phone);//createAcount(email,passw1)
         }
 
 
