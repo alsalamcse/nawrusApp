@@ -3,9 +3,11 @@ package nawrus.myapplication;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -22,6 +24,8 @@ public class SignUp extends AppCompatActivity {
     private EditText edtPassword;
     private EditText edtRewritePassword;
     private Button btnSignUp;
+    private CheckBox checkManager;
+    private CheckBox checkClient;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +38,7 @@ public class SignUp extends AppCompatActivity {
         edtPassword=(EditText)findViewById(R.id.edtPassword);
         edtRewritePassword=(EditText)findViewById(R.id.edtRewritePassword);
         btnSignUp=(Button)findViewById(R.id.btnSignUp);
+        checkManager=(CheckBox)findViewById(R.id.checkManager);
 
         btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,9 +54,10 @@ public class SignUp extends AppCompatActivity {
         String email=edtEmail.getText().toString();
         String passw1=edtPassword.getText().toString();
         String fname=edtfname.getText().toString();
-        String lname=edtfname.getText().toString();
+        String lname=edtlname.getText().toString();
         String phone=edtPhone.getText().toString();
         String passw2=edtRewritePassword.getText().toString();
+
         if(email.length()<4 || email.indexOf('@')<0 || email.indexOf('.')<0) {
             edtEmail.setError("wrong Email");
             isOk = false;
@@ -88,7 +94,20 @@ public class SignUp extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
                     Toast.makeText(SignUp.this, "sign up succesful", Toast.LENGTH_SHORT).show();
-                    finish();
+                    if(checkManager.isChecked())
+                    {
+                        Intent i=new Intent(getApplication(),AddManager.class);
+                        startActivity(i);
+                        finish();
+                    }
+                    else
+                    {
+                        Intent i=new Intent(getApplication(),AddClient.class);
+                        startActivity(i);
+                        finish();
+
+                    }
+
 
                 }
                 else

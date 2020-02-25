@@ -82,7 +82,7 @@ public class AddManager extends AppCompatActivity {
         DatabaseReference reference = database.getReference();
         FirebaseAuth auth=FirebaseAuth.getInstance();//to get the user uid(or other details like email)
         String uid= auth.getCurrentUser().getUid();
-        String key = reference.child("task").push().getKey();
+        String key = reference.child("managers").push().getKey();
         t.setKey(key);
         reference.child(key).setValue(t).addOnCompleteListener(AddManager.this, new OnCompleteListener<Void>()
         {

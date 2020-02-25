@@ -74,7 +74,7 @@ public class AddClient extends AppCompatActivity {
         DatabaseReference reference = database.getReference();
         FirebaseAuth auth = FirebaseAuth.getInstance();//to get the user uid(or other details like email)
         String uid = auth.getCurrentUser().getUid();
-        String key = reference.child("task").push().getKey();
+        String key = reference.child("users").push().getKey();
         d.setKey(key);
         reference.child(key).setValue(d).addOnCompleteListener(AddClient.this, new OnCompleteListener<Void>() {
             @Override

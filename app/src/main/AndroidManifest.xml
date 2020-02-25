@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AddClient"></activity>
+        <activity android:name=".TaskAdapter1"></activity>
+        <activity android:name=".AddClient" />
         <activity android:name=".AddManager" />
         <activity android:name=".managerChart" />
         <activity android:name=".manager" />

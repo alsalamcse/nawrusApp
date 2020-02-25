@@ -10,15 +10,12 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btnManager;
-    private Button btnClient;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        btnManager=(Button)findViewById(R.id.btnManager);
-        btnClient=(Button)findViewById(R.id.btnClient);
+
 
 
     }
@@ -30,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
             public void run()
             {
                 try {
-                    sleep(10*1000);
+                    sleep(2*1000);
                     FirebaseAuth auth=FirebaseAuth.getInstance();
                     if(auth.getCurrentUser()==null || auth.getCurrentUser().getEmail()==null){
                         Intent i=new Intent(getApplication(),SignIn.class);
@@ -38,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
                         finish();
                     }
                     else{
-                        Intent i=new Intent(getApplication(),MainActivity.class);
+                        Intent i=new Intent(getApplication(),SignIn.class);
                         startActivity(i);
                         finish();
                     }
