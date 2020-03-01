@@ -55,6 +55,7 @@ public class MyManager {
         return hour;
     }
 
+
     public void setHour(String hour) {
         this.hour = hour;
     }
