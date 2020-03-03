@@ -22,12 +22,12 @@ public class ManagerAdapter extends ArrayAdapter<MyManager> {
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
 
-        View vitem= LayoutInflater.from(getContext()).inflate(R.layout.clientitem,parent,false);
-        TextView managerName=vitem.findViewById(R.id.tvManagerName);
-        TextView managerPhone=vitem.findViewById((R.id.tvManagerPhone));
-        TextView managerDate=vitem.findViewById(R.id.tvManagerDate);
-        TextView managerSubject=vitem.findViewById(R.id.tvManagerSubject);
-        TextView managerHour=vitem.findViewById(R.id.tvManagerHour);
+        View vitem2= LayoutInflater.from(getContext()).inflate(R.layout.manageritem,parent,false);
+        TextView managerName=vitem2.findViewById(R.id.tvManagerName);
+        TextView managerPhone=vitem2.findViewById((R.id.tvManagerPhone));
+        TextView managerDate=vitem2.findViewById(R.id.tvManagerDate);
+        TextView managerSubject=vitem2.findViewById(R.id.tvManagerSubject);
+        TextView managerHour=vitem2.findViewById(R.id.tvManagerHour);
 
         MyManager myManager=getItem(position);
 
@@ -41,6 +41,6 @@ public class ManagerAdapter extends ArrayAdapter<MyManager> {
 
 
 
-        return vitem;
+        return vitem2;
     }
 }
