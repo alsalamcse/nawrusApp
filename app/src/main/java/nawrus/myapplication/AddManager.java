@@ -70,6 +70,9 @@ public class AddManager extends AppCompatActivity {
         {
             MyManager t=new MyManager();
             t.setName(name);
+            t.setDate(date);
+            t.setHour(hour);
+            t.setPhone(phone);
             createMyManager(t);
 
         }
@@ -84,7 +87,7 @@ public class AddManager extends AppCompatActivity {
         String uid= auth.getCurrentUser().getUid();
         String key = reference.child("managers").push().getKey();
         t.setKey(key);
-        reference.child(key).setValue(t).addOnCompleteListener(AddManager.this, new OnCompleteListener<Void>()
+        reference.child("managers").child(key).setValue(t).addOnCompleteListener(AddManager.this, new OnCompleteListener<Void>()
         {
             @Override
             public void onComplete(@NonNull Task<Void> task) {

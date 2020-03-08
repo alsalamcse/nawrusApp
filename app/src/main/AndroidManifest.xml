@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MyClientActivity"></activity>
-        <activity android:name=".TaskAdapter1" />
+
         <activity android:name=".AddClient" />
         <activity android:name=".AddManager" />
-        <activity android:name=".managerChart" />
+
         <activity android:name=".manager" />
         <activity android:name=".SignUp" />
         <activity android:name=".SignIn" />

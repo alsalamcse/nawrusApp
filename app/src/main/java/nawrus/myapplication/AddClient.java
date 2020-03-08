@@ -76,7 +76,7 @@ public class AddClient extends AppCompatActivity {
         String uid = auth.getCurrentUser().getUid();
         String key = reference.child("users").push().getKey();
         d.setKey(key);
-        reference.child(key).setValue(d).addOnCompleteListener(AddClient.this, new OnCompleteListener<Void>() {
+        reference.child("users").child(key).setValue(d).addOnCompleteListener(AddClient.this, new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
                 if (task.isSuccessful()) {
