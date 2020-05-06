@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_launcher3man"
+    tools:context=".addTurn1">
+
+    <EditText
+        android:id="@+id/edtNameTurn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="39dp"
+        android:background="@color/colorPrimary"
+        android:ems="10"
+        android:hint="name"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtPhoneTurn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:ems="10"
+        android:hint="phone"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/edtNameTurn"
+        app:layout_constraintTop_toBottomOf="@+id/edtNameTurn" />
+
+    <EditText
+        android:id="@+id/edtEmailTurn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="22dp"
+        android:background="@color/colorPrimary"
+        android:ems="10"
+        android:hint="email"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/edtPhoneTurn"
+        app:layout_constraintTop_toBottomOf="@+id/edtPhoneTurn" />
+
+    <EditText
+        android:id="@+id/edtBeginHour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="1dp"
+        android:background="@color/colorPrimary"
+        android:ems="10"
+        android:hint="begin hour"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edtEmailTurn"
+        app:layout_constraintTop_toBottomOf="@+id/edtEmailTurn" />
+
+    <EditText
+        android:id="@+id/edtDateTurn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="22dp"
+        android:background="@color/colorPrimary"
+        android:ems="10"
+        android:hint="date"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/edtBeginHour"
+        app:layout_constraintTop_toBottomOf="@+id/edtBeginHour" />
+
+    <Button
+        android:id="@+id/btnSaveTurn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="145dp"
+        android:layout_marginBottom="200dp"
+        android:background="@color/colorAccent"
+        android:text="save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

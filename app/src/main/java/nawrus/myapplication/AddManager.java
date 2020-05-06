@@ -34,7 +34,7 @@ public class AddManager extends AppCompatActivity {
         edtSubject=(EditText)findViewById(R.id.edtSubject);
         edtPhone4=(EditText)findViewById(R.id.edtPhone4);
         btnSave=(Button)findViewById(R.id.btnSave);
-        edtDate=(EditText)findViewById(R.id.edtDate);
+        edtDate=(EditText)findViewById(R.id.edtDateTurn);
         edtHour=(EditText)findViewById(R.id.edtHour);
 
         btnSave.setOnClickListener(new View.OnClickListener() {

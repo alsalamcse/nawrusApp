@@ -29,7 +29,7 @@ public class SignIn extends AppCompatActivity {
 
 
         txtvDay1=(TextView)findViewById(R.id.txtvDay1);
-        edtEmail=(EditText)findViewById(R.id.edtEmail);
+        edtEmail=(EditText)findViewById(R.id.edtEmailTurn);
         edtPassword=(EditText)findViewById(R.id.edtPassword);
         btnSignIn=(Button)findViewById(R.id.btnSignIn);
         btnSignUp=(Button)findViewById(R.id.btnSignUp);

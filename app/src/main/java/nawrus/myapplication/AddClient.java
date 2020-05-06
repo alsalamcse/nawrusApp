@@ -62,6 +62,9 @@ public class AddClient extends AppCompatActivity {
         if (isOk) {
             MyClient d = new MyClient();
             d.setName1(name1);
+            d.setEmail1(email1);
+            d.setPhone1(phone1);
+            d.setPassword1(password1);
             createMyTask(d);
 
         }

@@ -4,13 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@mipmap/ic_launcher3man"
     tools:context=".AddManager">
 
     <EditText
         android:id="@+id/edtName4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="220dp"
+        android:layout_height="43dp"
         android:layout_marginTop="85dp"
+        android:background="@color/colorPrimary"
         android:ems="10"
         android:hint="Name"
         android:inputType="textPersonName"
@@ -20,10 +22,11 @@
 
     <EditText
         android:id="@+id/edtSubject"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="221dp"
+        android:layout_height="37dp"
         android:layout_marginStart="4dp"
         android:layout_marginBottom="29dp"
+        android:background="@color/colorPrimary"
         android:ems="10"
         android:hint="Subject"
         android:inputType="textPersonName"
@@ -32,32 +35,36 @@
 
     <EditText
         android:id="@+id/edtPhone4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="214dp"
+        android:layout_height="41dp"
         android:layout_marginEnd="1dp"
         android:layout_marginBottom="20dp"
+        android:background="@color/colorPrimary"
         android:ems="10"
         android:hint="Phone"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/edtDate"
-        app:layout_constraintEnd_toEndOf="@+id/edtDate" />
+        app:layout_constraintBottom_toTopOf="@+id/edtDateTurn"
+        app:layout_constraintEnd_toEndOf="@+id/edtDateTurn" />
 
     <Button
         android:id="@+id/btnSave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
+        android:background="@color/colorAccent"
         android:text="Save"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtDate" />
+        app:layout_constraintTop_toBottomOf="@+id/edtDateTurn" />
 
     <EditText
-        android:id="@+id/edtDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/edtDateTurn"
+        android:layout_width="225dp"
+        android:layout_height="42dp"
         android:layout_marginTop="312dp"
+        android:background="@color/colorPrimary"
+        android:backgroundTint="@color/colorPrimary"
         android:ems="10"
         android:hint="Date"
         android:inputType="textPersonName"
@@ -67,14 +74,15 @@
 
     <EditText
         android:id="@+id/edtHour"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="221dp"
+        android:layout_height="31dp"
         android:layout_marginStart="3dp"
         android:layout_marginTop="19dp"
+        android:background="@color/colorPrimary"
         android:ems="10"
         android:hint="hour"
         android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="@+id/edtDate"
-        app:layout_constraintTop_toBottomOf="@+id/edtDate" />
+        app:layout_constraintStart_toStartOf="@+id/edtDateTurn"
+        app:layout_constraintTop_toBottomOf="@+id/edtDateTurn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
