@@ -9,6 +9,7 @@
         android:id="@+id/lstvClient"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@mipmap/ic_launcher3man_round"
         tools:layout_editor_absoluteX="63dp"
         tools:layout_editor_absoluteY="77dp" />
 </FrameLayout>

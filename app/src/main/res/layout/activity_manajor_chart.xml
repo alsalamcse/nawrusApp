@@ -10,20 +10,22 @@
         android:id="@+id/txtvDay2"
         android:layout_width="209dp"
         android:layout_height="50dp"
-        android:layout_marginTop="54dp"
+        android:background="#323F3838"
         android:text="day"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/lvTasks"
+        app:layout_constraintTop_toTopOf="@+id/lvTasks" />
 
     <ListView
         android:id="@+id/lvTasks"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:background="@mipmap/ic_launcher3man_round"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0">
+
+    </ListView>
 </androidx.constraintlayout.widget.ConstraintLayout>

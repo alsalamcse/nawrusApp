@@ -1,35 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_launcher3man_round"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/tvManagerName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#48665C5C"
         android:text="TextView" />
 
     <TextView
         android:id="@+id/tvManagerPhone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#5E776B6B"
         android:text="TextView" />
 
     <TextView
         android:id="@+id/tvManagerDate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#60615858"
         android:text="TextView" />
 
     <TextView
         android:id="@+id/tvManagerSubject"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#5C5A5353"
         android:text="TextView" />
 
     <TextView
         android:id="@+id/tvManagerHour"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#5B3D3A3A"
         android:text="TextView" />
 </LinearLayout>
